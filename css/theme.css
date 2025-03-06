@@ -77,7 +77,7 @@ li {
 #header .header-body {
 	display: flex;
 	flex-direction: column;
-	background: var(--light);
+	background: var(--dark--100);
 	transition: min-height 0.3s ease;
 	width: 100%;
 	border-top: 3px solid #EDEDED;
@@ -4978,11 +4978,11 @@ html[dir="rtl"] #header .tip-light:before {
 	}
 
 	#header .header-nav.header-nav-links nav > ul li:hover > a {
-		color: var(--primary);
+		color: #BBFE02;
 	}
 
 	#header .header-nav.header-nav-links nav > ul:not(:hover) > li > a.active {
-		color: var(--primary);
+		color: #BBFE02;
 	}
 
 	#header .header-nav.header-nav-links.header-nav-links-vertical-slide nav ul li.dropdown .dropdown-menu::-webkit-scrollbar-thumb {
@@ -4990,7 +4990,7 @@ html[dir="rtl"] #header .tip-light:before {
 	}
 
 	#header .header-nav.header-nav-line nav > ul li:hover > a {
-		color: var(--primary);
+		color: #BBFE02;
 	}
 
 	#header .header-nav.header-nav-line nav > ul li:hover > a:before {
