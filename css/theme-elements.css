@@ -11599,8 +11599,8 @@ ul.sitemap.list ul {
 .list.list-icons li > [class*="fa-"]:first-child,
 .list.list-icons li > .icons:first-child, .list.list-icons li a:first-child > [class*="fa-"]:first-child,
 .list.list-icons li a:first-child > .icons:first-child {
-	color: var(--primary);
-	border-color: var(--primary);
+	color: #BAFD02;
+	border-color: #BAFD02;
 }
 
 .list.list-icons.list-icons-style-3 li > [class*="fa-"]:first-child,
