@@ -21,6 +21,7 @@
 
 		<!-- Web Fonts  -->
 		<link id="googleFonts" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light&display=swap" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 
 		<!-- Vendor CSS -->
 		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -68,6 +69,16 @@
     display: inline-block;
 	z-index: 99;
 }
+
+.text-gradient1 {
+    background: linear-gradient(to right, #FCFEFF, #BAFD02);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+	z-index: 99;
+}
+
+
 .highlight {
     color: #080808 !important;
     background-color: #BAFD02 !important;
@@ -84,7 +95,7 @@
     overflow: hidden;
     border-radius: 15px;
     background: linear-gradient(135deg, #1a1a1a, #0f0f0f); /* Warna latar belakang */
-    padding: 20px;
+   
     color: white;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
@@ -104,12 +115,15 @@
     position: absolute;
     bottom: 10px;
     right: 10px;
-    width: 100px;
-    height: 100px;
-    background: url('img/demos/business-consulting-4/icons/icon-3.svg') no-repeat center;
-    background-size: contain;
-    opacity: 50%; /* Transparan agar samar */
+    font-size: 50px; /* Ukuran ikon */
+    opacity: 20%; /* Transparan agar samar */
+    color: #ffffff; /* Warna ikon */
 }
+.text-highlight {
+    color: #BAFD02;
+}
+
+
 
 
 
@@ -413,24 +427,34 @@
 					</div>
 				</section>
 
-				<section class="section border-0 bg-quaternary m-0">
+				<section class="section border-0 bg-quaternary m-0" style="position: relative; width: 100%; height: 100vh; background: radial-gradient(circle at top left, rgba(50, 80, 20, 1) 10%, rgba(15, 15, 15, 1) 40%, rgba(5, 5, 5, 1) 70%, rgba(40, 60, 10, 1) 90%, rgba(50, 80, 20, 1) 100%);">
+					<div class="particles-wrapper z-index-99">
+						<div id="particles-1"></div>
+					</div>
 					<div class="container py-5">
-						<div class="row justify-content-center">
-							<div class="col col-lg-9 text-center">
-
-								<div class="divider divider-small divider-small-lg mt-0 text-center appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="0">
-									<hr class="bg-primary border-radius m-auto">
+						<div class="row justify-content-between align-items-center">
+							<div class="col-lg-9 col-md-12 text-start">
+								<h2 class="font-weight-medium text-8 pb-4 mb-0 appear-animation" 
+									data-appear-animation="fadeInUpShorter" 
+									data-appear-animation-delay="200">
+									<span class="text-gradient">We offer efficient and</span> <br> <span class="text-highlight">High-Quality</span> <span class="text-gradient">Apparel with Precision & Care.</span>
+								</h2>
+							</div>
+							<div class="col-lg-3 col-md-12 text-end">
+								<div class="divider divider-small divider-small-lg mt-0 appear-animation" 
+									 data-appear-animation="fadeInUpShorter" 
+									 data-appear-animation-delay="0">
+									<hr class="bg-primary border-radius m-auto" style="float: right;">
 								</div>
 								<div class="overflow-hidden mb-1">
-									<h3 class="font-weight-semi-bold text-color-grey text-uppercase positive-ls-3 text-4 line-height-2 line-height-sm-7 mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="100">How We Can Help</h3>
+									<h3 class="font-weight-semi-bold text-color-grey text-uppercase positive-ls-3 text-4 line-height-2 line-height-sm-7 mb-0 appear-animation" 
+										data-appear-animation="maskUp" 
+										data-appear-animation-delay="100">
+										How We Can Help
+									</h3>
 								</div>
-								<h2 class="text-color-dark font-weight-bold text-8 pb-4 mb-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">Our Amazing Services</h2>
-
-								<p class="font-weight-medium text-4-5 line-height-5 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">Cras a elit sit amet leo accumsan volutpat. Suspendisse hendrerit vehicula leo, vel efficitur felis ultrices non.</p>
-
 							</div>
 						</div>
-
 						<div class="row py-5 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
 							<div class="col-md-3 mb-4 mb-md-0">
 								<div class="card card-border card-border-top card-border-hover bg-color-light border-0 box-shadow-6 box-shadow-hover anim-hover-translate-top-10px transition-3ms anim-hover-inner-wrapper custom-card">
@@ -438,7 +462,7 @@
 										<div class="card-number">01</div>
 										<div class="anim-hover-inner-translate-top-20px transition-3ms">
 											<h4 class="card-title mt-4 mb-2 text-5 font-weight-medium">Custom Apparel Production</h4>
-											<p class="card-text text-3-5">Lorem ipsum dolor sit amet, consectetur elit.</p>
+											<p class="card-text text-3">We provide custom apparel production services tailored to your specific needs.</p>
 										</div>
 										<div class="w-100 text-center p-absolute opacity-0 bottom-30 left-0 transformY-p100 anim-hover-inner-opacity-10 anim-hover-inner-translate-top-0px transition-4ms">
 											<a href="demo-business-consulting-4-services-detail.html" class="read-more text-color-primary font-weight-semibold mt-2 text-2">
@@ -446,7 +470,10 @@
 											</a>
 										</div>
 									</div>
-									<div class="card-icon"></div>
+									<div class="card-icon">
+										<i class="bi bi-tools" style="font-size: 75px;"></i> <!-- Ganti dengan ikon manufacturing dan besarkan ukuran -->
+										<!-- Ikon ini lebih sesuai untuk manufacturing -->
+									</div>
 								</div>
 							</div>
 							<div class="col-md-3 mb-4 mb-md-0">
@@ -455,7 +482,7 @@
 										<div class="card-number">02</div>
 										<div class="anim-hover-inner-translate-top-20px transition-3ms">
 											<h4 class="card-title mt-4 mb-2 text-5 font-weight-medium">Scalable Manufacturing</h4>
-											<p class="card-text text-3-5">Lorem ipsum dolor sit amet, consectetur elit.</p>
+											<p class="card-text text-3">Our manufacturing processes are scalable to meet your growing demands.</p>
 										</div>
 										<div class="w-100 text-center p-absolute opacity-0 bottom-30 left-0 transformY-p100 anim-hover-inner-opacity-10 anim-hover-inner-translate-top-0px transition-4ms">
 											<a href="demo-business-consulting-4-services-detail.html" class="read-more text-color-primary font-weight-semibold mt-2 text-2">
@@ -463,7 +490,9 @@
 											</a>
 										</div>
 									</div>
-									<div class="card-icon"></div>
+									<div class="card-icon">
+										<i class="bi bi-calculator" style="font-size: 75px;"></i> <!-- Ganti dengan ikon yang sesuai dan besarkan ukuran -->
+									</div>
 								</div>
 							</div>
 							<div class="col-md-3 mb-4 mb-md-0">
@@ -472,15 +501,16 @@
 										<div class="card-number">03</div>
 										<div class="anim-hover-inner-translate-top-20px transition-3ms">
 											<h4 class="card-title mt-4 mb-2 text-5 font-weight-medium">Quality Assurance</h4>
-											<p class="card-text text-3-5">Lorem ipsum dolor sit amet, consectetur elit.</p>
+											<p class="card-text text-3">We ensure the quality of our products through rigorous assurance processes.</p>
 										</div>
 										<div class="w-100 text-center p-absolute opacity-0 bottom-30 left-0 transformY-p100 anim-hover-inner-opacity-10 anim-hover-inner-translate-top-0px transition-4ms">
 											<a href="#" class="read-more text-color-primary font-weight-semibold mt-2 text-2">
 												Learn More <i class="fas fa-angle-right position-relative top-1 ms-1"></i>
 											</a>
 										</div>
-									</div>
-									<div class="card-icon"></div>
+									</div><div class="card-icon">
+										<i class="bi bi-check-circle" style="font-size: 75px;"></i> <!-- Ganti dengan ikon yang sesuai dan besarkan ukuran -->
+									</div><div class="card-icon"></div>
 								</div>
 							</div>
 							<div class="col-md-3 mb-4 mb-md-0">
@@ -489,7 +519,7 @@
 										<div class="card-number">04</div>
 										<div class="anim-hover-inner-translate-top-20px transition-3ms">
 											<h4 class="card-title mt-4 mb-2 text-5 font-weight-medium">Custom Design Services</h4>
-											<p class="card-text text-3-5">Lorem ipsum dolor sit amet, consectetur elit.</p>
+											<p class="card-text text-3">We offer custom design services to bring your unique ideas to life.</p>
 										</div>
 										<div class="w-100 text-center p-absolute opacity-0 bottom-30 left-0 transformY-p100 anim-hover-inner-opacity-10 anim-hover-inner-translate-top-0px transition-4ms">
 											<a href="demo-business-consulting-4-services-detail.html" class="read-more text-color-primary font-weight-semibold mt-2 text-2">
@@ -497,59 +527,96 @@
 											</a>
 										</div>
 									</div>
-									<div class="card-icon"></div>
+									<div class="card-icon">
+										<i class="bi bi-pencil" style="font-size: 75px;"></i> <!-- Ganti dengan ikon yang sesuai dan besarkan ukuran -->
+									</div>
 								</div>
 							</div>
 							
 							</div>
 						</div>
 
-						<div class="row justify-content-center">
-							<div class="col col-lg-9 text-center">
-
-								<div class="d-block pt-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300">
-									<a href="demo-business-consulting-4-services.html" class="btn btn-modern btn-primary btn-arrow-effect-1 text-capitalize text-2-5 px-5 py-3 anim-hover-translate-top-5px transition-2ms">Learn More <i class="fas fa-arrow-right ms-2"></i></a>
-								</div>
-
-							</div>
-						</div>
+						
 					</div>
 				</section>
 
-				<section class="section border-0 bg-dark m-0 p-relative">
-					<div class="particles-wrapper z-index-1">
-						<div id="particles-1"></div>
-					</div>
-					<div class="container py-5 p-relative z-index-2">
+				<section class="section border-0 m-0" id="start" style="background-color: #080808;">
+					<div class="container py-5 mb-3">
 						<div class="row">
-							<div class="col text-center">
+							<div class="row justify-content-between align-items-center">
+			
+										
+										<!-- How We Can Help (di kiri) -->
+										<div class="col-lg-3 text-start">
+											<div class="divider divider-small divider-small-lg mt-0 appear-animation" 
+												data-appear-animation="fadeInUpShorter" 
+												data-appear-animation-delay="0" style="text-align: left;">
+												<hr class="bg-primary border-radius m-0" style="width: 50px; height: 6px; background-color: #BAFD02; border: none; margin-left: 0;">
+											</div>
+											<div class="overflow-hidden mb-1">
+												<h3 class="font-weight-semi-bold text-color-grey text-uppercase positive-ls-3 text-4 line-height-2 line-height-sm-7 mb-0 appear-animation" 
+													data-appear-animation="maskUp" 
+													data-appear-animation-delay="100">
+													Production Process
+												</h3>
+											</div>
+										</div>
 
-								<div class="divider divider-small divider-small-lg mt-0 text-center appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="0">
-									<hr class="bg-primary border-radius m-auto">
+										<!-- We Offer (di kanan) -->
+										<div class="col-lg-9 text-end">
+											<h2 class="font-weight-medium text-8 pb-4 mb-0 appear-animation" 
+												data-appear-animation="fadeInUpShorter" 
+												data-appear-animation-delay="200">
+												<span class="text-gradient1">From Vision to Reality: Crafting <br>
+													Excellence in Every Stitch</span> 
+												
+											</h2>
+										</div>
+										</div>
 								</div>
-								<div class="overflow-hidden mb-1">
-									<h3 class="font-weight-semi-bold text-color-grey text-uppercase positive-ls-3 text-4 line-height-2 line-height-sm-7 mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="100">Company Stats</h3>
-								</div>
-								<h2 class="text-color-light font-weight-bold text-8 pb-4 mb-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">Learn More About Us In Numbers</h2>
-							</div>
-						</div>
-						<div class="row pt-4 pb-3 counters text-light appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
-							<div class="col-lg-4 mb-4 mb-lg-0">
-								<div class="counter">
-									<strong data-to="500" data-append="+">0</strong>
-									<label class="font-weight-semibold text-4 opacity-7">Cases Completed</label>
-								</div>
-							</div>
-							<div class="col-lg-4 mb-4 mb-lg-0">
-								<div class="counter">
-									<strong data-to="100" data-append="+">0</strong>
-									<label class="font-weight-semibold text-4 opacity-7">Total Consultants</label>
-								</div>
-							</div>
-							<div class="col-lg-4 mb-4 mb-sm-0">
-								<div class="counter">
-									<strong data-to="100" data-append="%">0</strong>
-									<label class="font-weight-semibold text-4 opacity-7">Satisfied Customers</label>
+						
+								<div class="col">
+		
+									<div class="process process-vertical py-4">
+										<div class="process-step appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
+											<div class="process-step-circle">
+												<strong class="process-step-circle-content" style="color: #BAFD02;">1</strong>
+											</div>
+											<div class="process-step-content">
+												<h4 class="mb-1 text-4 font-weight-semi-bold text-white">Order Placement & Consultation</h4>
+												<p class="mb-0">At this stage, <span style="color: white; font-style: italic;">customers place their orders</span> and <span style="color: white; font-style: italic;">consult with our team</span> regarding their production needs,
+													including <span style="color: white; font-style: italic;">material selection, design, and quantity</span> . Our team provides expert recommendations based on the customer's specifications. Once everything is finalized, an initial cost estimation is calculated based on the chosen materials and production complexity.</p>
+											</div>
+										</div>
+										<div class="process-step appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
+											<div class="process-step-circle">
+												<strong class="process-step-circle-content" style="color: #BAFD02;">2</strong>
+											</div>
+											<div class="process-step-content">
+												<h4 class="mb-1 text-4 font-weight-semi-bold text-white">Costing & Timeline</h4>
+												<p class="mb-0">After confirming the order details, our team <span style="color: white; font-style: italic;"> creates patterns </span> according to the design requirements. We <span style="color: white; font-style: italic;">check material availability</span> and establish a production timeline to ensure a smooth workflow. Simultaneously, raw materials are procured from trusted suppliers to guarantee that all production needs are met on schedule.</p>
+											</div>
+										</div>
+										<div class="process-step appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
+											<div class="process-step-circle">
+												<strong class="process-step-circle-content">3</strong>
+											</div>
+											<div class="process-step-content">
+												<h4 class="mb-1 text-4 font-weight-bold">Third Step</h4>
+												<p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas risus est, dignissim non urna at, efficitur cursus nibh. Curabitur varius vel mauris at auctor. Nam ullamcorper bibendum est et porta. Donec congue libero vitae semper varius. Vivamus eu congue leo. Quisque ullamcorper elit at metus elementum condimentum. Sed orci augue, pellentesque in egestas quis, vestibulum non ex. Suspendisse tempus tellus ac augue iaculis suscipit.</p>
+											</div>
+										</div>
+										<div class="process-step appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800">
+											<div class="process-step-circle">
+												<strong class="process-step-circle-content">4</strong>
+											</div>
+											<div class="process-step-content">
+												<h4 class="mb-1 text-4 font-weight-bold">Fourth Step</h4>
+												<p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas risus est, dignissim non urna at, efficitur cursus nibh. Curabitur varius vel mauris at auctor.</p>
+											</div>
+										</div>
+									</div>
+		
 								</div>
 							</div>
 						</div>
@@ -1014,6 +1081,18 @@
 
 			initMap();	
 
+		</script>
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				// Pastikan file JSON ada di folder yang benar
+				fetch('vendor/particles/particles-config.json')
+					.then(response => response.json())
+					.then(data => {
+						particlesJS('particles-4', data);
+						console.log('Particles 4 loaded successfully!');
+					})
+					.catch(error => console.error('Error loading particles JSON:', error));
+			});
 		</script>
 
 	</body>
