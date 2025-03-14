@@ -4128,6 +4128,8 @@ body.dark .pagination > .active > a {
 	padding: 2rem;
 	position: relative;
 	z-index: 1;
+	background: linear-gradient(to right bottom, #313534, #0F1417);
+	border: none;
 }
 
 .card-text-color-hover-light:hover * {
@@ -15262,7 +15264,8 @@ html.boxed .nav-secondary.sticky-active {
 
 /* Process - Skin */
 .process .process-step-circle {
-	border-color: var(--primary);
+	border-color: #1F2425;
+	background-color: #1F2425;
 }
 
 .process .process-step:hover .process-step-circle {
