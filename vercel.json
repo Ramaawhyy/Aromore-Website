@@ -1,0 +1,8 @@
+{
+    "rewrites": [
+        {
+            "source": "/",
+            "destination": "/demo-business-consulting-4.html"
+        }
+    ]
+}
