@@ -163,6 +163,82 @@
     }
 }
 
+@media (max-width: 768px) {
+    /* Mengurangi tinggi kartu */
+    .custom-testimonial-section .owl-carousel .overlay {
+        height: 180px !important; /* Sesuaikan tinggi */
+        padding: 15px !important;
+    }
+
+    /* Mengatur ukuran teks lebih kecil */
+   
+
+    .custom-testimonial-section .owl-carousel p {
+        font-size: 10px !important; /* Teks paragraf lebih kecil */
+    }
+
+    .custom-testimonial-section .owl-carousel .author strong {
+        font-size: 14px !important; /* Nama author lebih kecil */
+    }
+
+    /* Mengurangi margin dan padding */
+    .custom-testimonial-section .owl-carousel {
+        padding: 0 5px !important;
+    }
+
+    .custom-testimonial-section .owl-carousel .star-rating {
+        margin-bottom: 5px !important;
+    }
+}
+
+@media (max-width: 768) {
+	
+}
+
+@media (max-width: 768px) {
+    .custom-carousel-section {
+        margin-left: 0 !important;
+		margin-top: 40px;
+        padding: 20px !important;
+    }
+
+    .custom-carousel-section .owl-carousel .overlay {
+        max-width: 500px !important; /* Sesuaikan ukuran card */
+        height: auto !important;
+        border-radius: 15px !important;
+        margin: 0 auto !important;
+    }
+
+    .custom-carousel-section .owl-carousel .overlay img {
+        width: 100% !important;
+        height: auto !important;
+        border-radius: 15px !important;
+    }
+
+    .custom-carousel-section .owl-carousel .overlay span {
+        font-size: 12px !important; /* Ukuran teks lebih kecil */
+        padding: 5px !important;
+    }
+
+    .custom-carousel-section .owl-carousel .overlay strong {
+        font-size: 14px !important;
+    }
+
+    .custom-carousel-section .owl-carousel .overlay p {
+        font-size: 10px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .custom-hero-section {
+        height: 130vh !important; /* Tinggi lebih besar di versi mobile */
+    }
+}
+
+
+
+
+
 
 
 
@@ -305,7 +381,7 @@
 
 			<div role="main" class="main">
 
-				<section style="position: relative; width: 100%; height: 100vh; background: radial-gradient(circle at top left, rgba(40, 45, 45, 1) 10%, rgba(15, 15, 15, 1) 40%, rgba(5, 5, 5, 1) 70%, rgba(40, 60, 10, 1) 90%, rgba(50, 80, 20, 1) 100%);">
+				<section class="custom-hero-section" style="position: relative; width: 100%; height: 100vh; background: radial-gradient(circle at top left, rgba(40, 45, 45, 1) 10%, rgba(15, 15, 15, 1) 40%, rgba(5, 5, 5, 1) 70%, rgba(40, 60, 10, 1) 90%, rgba(50, 80, 20, 1) 100%);">
 					<!-- Konten di dalam section -->
 				  
 					<div class="container">
@@ -331,7 +407,7 @@
 										</div>
 										
 									</div>
-									<div class="row align-items-end justify-content-end pt-10" style="margin-left: 100px;">
+									<div class="row align-items-end justify-content-end pt-10 custom-carousel-section" style="margin-left: 100px;">
 										<div class="col-lg-9 text-end">
 											<div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="800">
 												<div class="owl-carousel owl-theme stage-margin rounded-nav nav-icon-1 nav-size-md nav-position-1" data-plugin-options="{'responsive': {'0': {'items': 1}, '479': {'items': 1}, '768': {'items': 2}, '979': {'items': 2}, '1199': {'items': 2}}, 'margin': 10, 'loop': true, 'nav': true, 'dots': false, 'stagePadding': 40}">
@@ -967,7 +1043,8 @@
 					</div>
 				</section>
 
-				<section class="section border-0 bg-quaternary m-0" style="position: relative; width: 100%; height: 80vh; background: radial-gradient(circle at top left, rgba(50, 80, 20, 1) 10%, rgba(15, 15, 15, 1) 40%, rgba(5, 5, 5, 1) 70%, rgba(40, 60, 10, 1) 90%, rgba(50, 80, 20, 1) 100%);">
+				<section class="section border-0 bg-quaternary m-0 custom-testimonial-section" style="position: relative; width: 100%; height: 80vh; background: radial-gradient(circle at top left, rgba(50, 80, 20, 1) 10%, rgba(15, 15, 15, 1) 40%, rgba(5, 5, 5, 1) 70%, rgba(40, 60, 10, 1) 90%, rgba(50, 80, 20, 1) 100%);">
+
 					<div class="particles-wrapper z-index-99">
 						<div id="particles-1-duplicate2" style="opacity: 0.2;"></div>
 					</div>
