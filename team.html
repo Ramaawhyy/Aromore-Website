@@ -291,6 +291,18 @@
     }
 }
 
+.nav-pills .nav-link {
+    color: white; /* Warna teks putih saat tidak aktif */
+    background-color: transparent; /* Background transparan saat tidak aktif */
+}
+
+.nav-pills .nav-link.active {
+    color: black !important; /* Warna teks hitam saat aktif */
+    background-color: var(--primary) !important; /* Background color sesuai warna primary Bootstrap */
+}
+
+
+
 
 
 
@@ -330,32 +342,16 @@
 														<a href="services.html" class="nav-link">Services</a>
 													</li>
 													<li>
-														<a href="demo-education-instructors.html" class="nav-link active">Team</a>
+														<a href="demo-education-instructors.html" class="nav-link" style="color: #BCF31D;">Team</a>
 													</li>
 												</ul>
 											</nav>
 										</div>
 									</div>
-									<div class="header-nav-features header-nav-features-no-border">
-										<div class="header-nav-feature header-nav-features-search d-inline-flex">
-											<a href="#" class="header-nav-features-toggle text-decoration-none" data-focus="headerSearch" aria-label="Search">
-												<i class="icons icon-magnifier header-nav-top-icon font-weight-bold text-4 top-2 text-color-primary"></i>
-											</a>
-											<div class="header-nav-features-dropdown header-nav-features-dropdown-mobile-fixed" id="headerTopSearchDropdown">
-												<form role="search" action="page-search-results.html" method="get">
-													<div class="simple-search input-group">
-														<input class="form-control text-1" id="headerSearch" name="q" type="search" value="" placeholder="Search...">
-														<button class="btn" type="submit" aria-label="Search">
-															<i class="icons icon-magnifier header-nav-top-icon font-weight-bold text-color-dark text-4 text-color-hover-primary top-2"></i>
-														</button>
-													</div>
-												</form>
-											</div>
-										</div>
-									</div>
-									<button class="btn header-btn-collapse-nav" data-bs-toggle="collapse" data-bs-target=".header-nav-main nav">
-										<i class="fas fa-bars"></i>
-									</button>
+									<a href="demo-business-consulting-4-contact-us.html" class="btn btn-modern btn-primary btn-outline btn-arrow-effect-1 text-capitalize text-2-5 ms-3 me-2 d-block d-md-none d-xl-block anim-hover-translate-right-5px transition-2ms">Contact Us <i class="fas fa-arrow-right ms-2"></i></a>
+										<button class="btn header-btn-collapse-nav" data-bs-toggle="collapse" data-bs-target=".header-nav-main nav">
+											<i class="fas fa-bars"></i>
+										</button>
 								</div>
 							</div>
 						</div>
@@ -379,107 +375,233 @@
 				</section>
 				
 					
-					<section class="page-header page-header-modern mb-0" style="background-color: transparent;">	
-					
-					</section>
+
+
+				<section class="team">
+					<div class="container">
+				
+						<div class="row mt-5 mb-5">
+							<div class="row justify-content-between align-items-center">
+								<div class="col-lg-9 col-md-12 text-start">
+									<h2 class="font-weight-medium text-8 pb-4 mb-0 appear-animation" 
+										data-appear-animation="fadeInUpShorter" 
+										data-appear-animation-delay="200">
+										<span class="text-gradient">Meet Our</span> <br> <span class="text-highlight">Team</span>
+									</h2>
+								</div>
+								<div class="col-lg-3 col-md-12 text-end">
+									<div class="divider divider-small divider-small-lg mt-0 appear-animation" 
+										 data-appear-animation="fadeInUpShorter" 
+										 data-appear-animation-delay="0">
+										<hr class="bg-primary border-radius m-auto" style="float: right;">
+									</div>
+									<div class="overflow-hidden mb-1">
+										<h3 class="font-weight-semi-bold text-color-grey text-uppercase positive-ls-3 text-4 line-height-2 line-height-sm-7 mb-0 appear-animation" 
+											data-appear-animation="maskUp" 
+											data-appear-animation-delay="100">
+											Our Team Members
+										</h3>
+									</div>
+								</div>
+							<div class="col" style="margin-top: 25px;">
+				
+								
+				
+								<p class="lead font-weight-normal">At PT Berkat Langgeng Sukses, our expert team ensures high-quality production, efficiency, and innovation in every project.</p>
+				
+								<ul class="nav nav-pills sort-source mb-4 pb-1" data-sort-id="portfolio" data-option-key="filter" data-plugin-options="{'layoutMode': 'fitRows', 'filter': '*'}">
+									<li class="nav-item active" data-option-value="*"><a class="nav-link active" href="#">Show All</a></li>
+									<li class="nav-item" data-option-value=".ceo"><a class="nav-link" href="#">CEO</a></li>
+									<li class="nav-item" data-option-value=".production"><a class="nav-link" href="#">Production Manager</a></li>
+									<li class="nav-item" data-option-value=".quality-control"><a class="nav-link" href="#">Quality Control</a></li>
+									<li class="nav-item" data-option-value=".marketing"><a class="nav-link" href="#">Marketing</a></li>
+									<li class="nav-item" data-option-value=".customer-relations"><a class="nav-link" href="#">Customer Relations</a></li>
+								</ul>
+				
+								<div class="sort-destination-loader sort-destination-loader-showing">
+									<div class="row portfolio-list sort-destination" data-sort-id="portfolio">
+										<div class="col-md-6 col-lg-3 isotope-item ceo">
+											<div class="portfolio-item">
+												<a href="#" data-href="demo-medical-doctors-detail.html" data-ajax-on-page class="text-decoration-none">
+													<span class="thumb-info thumb-info-no-zoom thumb-info-hide-wrapper-bg">
+														<span class="thumb-info-wrapper m-0">
+															<img src="img/demos/medical/doctors/doctor-5.jpg" class="img-fluid" alt="">
+														</span>
+														<span class="thumb-info-caption p-4 text-center">
+															<span class="custom-thumb-info-title">
+																<span class="custom-thumb-info-type font-weight-light text-4 d-block text-gradient">CEO</span>
+																<span class="custom-thumb-info-inner font-weight-semibold text-5 d-block text-gradient">John Doe</span>
+															</span>
+														</span>
+													</span>
+												</a>
+											</div>
+										</div>
+
+										
+				
+										<div class="col-md-6 col-lg-3 isotope-item production">
+											<div class="portfolio-item">
+												<a href="#" data-href="demo-medical-doctors-detail.html" data-ajax-on-page class="text-decoration-none">
+													<span class="thumb-info thumb-info-no-zoom thumb-info-hide-wrapper-bg">
+														<span class="thumb-info-wrapper m-0">
+															<img src="img/demos/medical/doctors/doctor-3.jpg" class="img-fluid" alt="">
+														</span>
+														<span class="thumb-info-caption p-4 text-center">
+															<span class="custom-thumb-info-title">
+																<span class="custom-thumb-info-type font-weight-light text-4 d-block text-gradient">Production</span>
+																<span class="custom-thumb-info-inner font-weight-semibold text-5 d-block text-gradient">Jessica Doe</span>
+															</span>
+														</span>
+													</span>
+												</a>
+											</div>
+										</div>
+				
+										<div class="col-md-6 col-lg-3 isotope-item quality-control">
+											<div class="portfolio-item">
+												<a href="#" data-href="demo-medical-doctors-detail.html" data-ajax-on-page class="text-decoration-none">
+													<span class="thumb-info thumb-info-no-zoom thumb-info-hide-wrapper-bg">
+														<span class="thumb-info-wrapper m-0">
+															<img src="img/demos/medical/doctors/doctor-5.jpg" class="img-fluid" alt="">
+														</span>
+														<span class="thumb-info-caption p-4 text-center">
+															<span class="custom-thumb-info-title">
+																<span class="custom-thumb-info-type font-weight-light text-4 d-block text-gradient">Quality Control</span>
+																<span class="custom-thumb-info-inner font-weight-semibold text-5 d-block text-gradient">Michael Johnson</span>
+															</span>
+														</span>
+													</span>
+												</a>
+											</div>
+										</div>
+				
+										<div class="col-md-6 col-lg-3 isotope-item marketing">
+												<div class="portfolio-item">
+													<a href="#" data-href="demo-medical-doctors-detail.html" data-ajax-on-page class="text-decoration-none">
+														<span class="thumb-info thumb-info-no-zoom thumb-info-hide-wrapper-bg">
+															<span class="thumb-info-wrapper m-0">
+																<img src="img/demos/medical/doctors/doctor-5.jpg" class="img-fluid" alt="">
+															</span>
+															<span class="thumb-info-caption p-4 text-center">
+																<span class="custom-thumb-info-title">
+																	<span class="custom-thumb-info-type font-weight-light text-4 d-block text-gradient">Marketing Manager</span>
+																	<span class="custom-thumb-info-inner font-weight-semibold text-5 d-block text-gradient">Sarah Lee</span>
+																</span>
+															</span>
+														</span>
+													</a>
+												</div>
+											</div>
+				
+										<div class="col-md-6 col-lg-3 isotope-item customer-relations">
+											<div class="portfolio-item">
+												<a href="#" data-href="demo-medical-doctors-detail.html" data-ajax-on-page class="text-decoration-none">
+													<span class="thumb-info thumb-info-no-zoom thumb-info-hide-wrapper-bg">
+														<span class="thumb-info-wrapper m-0">
+															<img src="img/demos/medical/doctors/doctor-5.jpg" class="img-fluid" alt="">
+														</span>
+														<span class="thumb-info-caption p-4 text-center">
+															<span class="custom-thumb-info-title">
+																<span class="custom-thumb-info-type font-weight-light text-4 d-block text-gradient">Customer Relations</span>
+																<span class="custom-thumb-info-inner font-weight-semibold text-5 d-block text-gradient">Emily Brown</span>
+															</span>
+														</span>
+													</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+				</section>
+				
 					
 
 			</div>
 
-			<footer id="footer" class="footer-reveal bg-color-secondary border-0 mt-0">
-				<div class="container py-5">
-					<div class="row py-5">
-						<div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
-
-							<a href="demo-education.html" class="d-inline-block mb-3">
-								<img alt="Porto" width="115" height="30" src="img/demos/education/logo-footer.png">
+			<footer id="footer" class="position-relative bg-dark border-top-0">		
+				<div class="container pt-5 pb-3">
+					<div class="row pt-5">
+						<div class="col-lg-4">
+							<a href="demo-business-consulting-4.html" class="text-decoration-none">
+								<img src="" width="123" height="32" class="img-fluid mb-4" alt="Logo Here" />
 							</a>
-
-							<ul class="social-icons social-icons-clean social-icons-icon-light">
-								<li>
-									<a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+							<p class="text-3-5 font-weight-medium pe-lg-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit quisque rutrum pellentesqu. </p>
+							<ul class="list list-unstyled">
+								<li class="d-flex align-items-center mb-4">
+									<i class="icon icon-envelope text-color-light text-5 font-weight-bold position-relative top-1 me-3-5"></i>
+									<a href="mailto:porto@business-consulting-4.com" class="d-inline-flex align-items-center text-decoration-none text-color-light text-color-hover-primary font-weight-semibold text-4-5">test@domain.com</a>
 								</li>
-								<li>
-									<a href="https://www.twitter.com/"><i class="fab fa-x-twitter"></i></a>
-								</li>
-								<li>
-									<a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+								<li class="d-flex align-items-center mb-4">
+									<i class="icon icon-phone text-color-light text-5 font-weight-bold position-relative top-1 me-3-5"></i>
+									<a href="tel:8001234567" class="d-inline-flex align-items-center text-decoration-none text-color-light text-color-hover-primary font-weight-semibold text-4-5">800-123-4567</a>
 								</li>
 							</ul>
-
-							<p class="text-3 mt-4 mb-0 line-height-8 text-color-tertiary opacity-6">Porto Education. © 2024.<br> All Rights Reserved</p>
-
-						</div>
-						<div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
-							<h4 class="font-weight-bold text-5 ">About Us</h4>
-							<ul class="list list-unstyled text-color-tertiary opacity-6">
-								<li class="mb-1">
-									Porto Education
+							<ul class="social-icons social-icons-clean social-icons-medium">
+								<li class="social-icons-facebook">
+									<a href="http://www.facebook.com/" target="_blank" title="Facebook">
+										<i class="fab fa-facebook-f text-color-light"></i>
+									</a>
 								</li>
-								<li class="mb-1">
-									123 Porto Blvd, Suite 100
+								<li class="social-icons-twitter">
+									<a href="http://www.twitter.com/" target="_blank" title="Twitter">
+										<i class="fab fa-x-twitter text-color-light"></i>
+									</a>
 								</li>
-								<li class="mb-1">
-									New York, NY
+								<li class="social-icons-instagram">
+									<a href="http://www.instagram.com/" target="_blank" title="Instagram">
+										<i class="fab fa-instagram text-color-light"></i>
+									</a>
 								</li>
-								<li class="mb-1">
-									Phone: <a href="tel:1234567890" class="text-decoration-none text-color-tertiary text-color-hover-primary">123-456-7890</a>
-								</li>
-								<li>
-									Email: <a href="mailto:email@domain.com" class="text-decoration-none text-color-tertiary text-color-hover-primary">porto@domain.com</a>
+								<li class="social-icons-linkedin">
+									<a href="http://www.linkedin.com/" target="_blank" title="Linkedin">
+										<i class="fab fa-linkedin text-color-light"></i>
+									</a>
 								</li>
 							</ul>
 						</div>
-						<div class="col-md-4 col-lg-2 mb-4 mb-lg-0">
-							<h4 class="font-weight-bold text-5">Navigation</h4>
-							<ul class="list list-unstyled opacity-6">
-								<li class="mb-1">
-									<a href="demo-education.html" class="text-decoration-none text-color-tertiary text-color-hover-primary link-hover-style-1">- Home</a>
-								</li>
-								<li class="mb-1">
-									<a href="demo-education-about-us.html" class="text-decoration-none text-color-tertiary text-color-hover-primary link-hover-style-1">- About Us</a>
-								</li>
-								<li class="mb-1">
-									<a href="demo-education-courses.html" class="text-decoration-none text-color-tertiary text-color-hover-primary link-hover-style-1">- Courses</a>
-								</li>
-								<li class="mb-1">
-									<a href="demo-education-instructors.html" class="text-decoration-none text-color-tertiary text-color-hover-primary link-hover-style-1">- Instructors</a>
-								</li>
-								<li class="mb-1">
-									<a href="demo-education-blog.html" class="text-decoration-none text-color-tertiary text-color-hover-primary link-hover-style-1">- Blog</a>
-								</li>
-								<li>
-									<a href="demo-education-contact-us.html" class="text-decoration-none text-color-tertiary text-color-hover-primary link-hover-style-1">- Contact Us</a>
-								</li>
-							</ul>
+						<div class="col-lg-8">
+							<div class="row mb-5-5">
+								<div class="col-lg-6 mb-4 mb-lg-0">
+									<h4 class="text-color-light font-weight-bold mb-3">Navigation</h4>
+									<ul class="list list-unstyled columns-lg-2">
+										<li><a href="#" class="text-color-grey text-color-hover-primary">Home</a></li>
+										<li><a href="#" class="text-color-grey text-color-hover-primary">About Us</a></li>
+										<li><a href="#" class="text-color-grey text-color-hover-primary">Our Services</a></li>
+										<li><a href="#" class="text-color-grey text-color-hover-primary">Team</a></li>
+									</ul>
+								</div>
+								
+							</div>
+							<div class="row">
+								<div class="col">
+									<div class="alert alert-success d-none" id="newsletterSuccess">
+										<strong>Success!</strong> You've been added to our email list.
+									</div>
+									<div class="alert alert-danger d-none" id="newsletterError"></div>
+									<div class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center">
+										<h4 class="text-color-light ws-nowrap me-3 mb-3 mb-lg-0">Subscribe to Newsletter:</h4>
+										<form id="newsletterForm" class="form-style-3 w-100" action="php/newsletter-subscribe.php" method="POST">
+											<div class="d-flex">
+												<input class="form-control bg-color-light border-0 box-shadow-none" placeholder="Email Address" name="newsletterEmail" id="newsletterEmail" type="text" />
+												<button class="btn btn-primary ms-2 btn-px-3 btn-py-2 font-weight-bold" type="submit">
+													Go
+												</button>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
 						</div>
-						<div class="col-md-4 col-lg-2 mb-4 mb-lg-0">
-							<h4 class="font-weight-bold text-5">Support</h4>
-							<ul class="list list-unstyled opacity-6">
-								<li class="mb-1">
-									<a href="demo-education.html" class="text-decoration-none text-color-tertiary text-color-hover-primary link-hover-style-1">- Documentation</a>
-								</li>
-								<li class="mb-1">
-									<a href="demo-education.html" class="text-decoration-none text-color-tertiary text-color-hover-primary link-hover-style-1">- Forums</a>
-								</li>
-								<li class="mb-1">
-									<a href="demo-education.html" class="text-decoration-none text-color-tertiary text-color-hover-primary link-hover-style-1">- Open a Ticket</a>
-								</li>
-								<li>
-									<a href="demo-education.html" class="text-decoration-none text-color-tertiary text-color-hover-primary link-hover-style-1">- FAQ's</a>
-								</li>
-							</ul>
-						</div>
-						<div class="col-md-4 col-lg-2 mb-4 mb-lg-0">
-							<h4 class="font-weight-bold text-5">More</h4>
-							<ul class="list list-unstyled opacity-6">
-								<li class="mb-1">
-									<a href="demo-education.html" class="text-decoration-none text-color-tertiary text-color-hover-primary link-hover-style-1">- Terms of Use</a>
-								</li>
-								<li>
-									<a href="demo-education.html" class="text-decoration-none text-color-tertiary text-color-hover-primary link-hover-style-1">- Privacy Policy</a>
-								</li>
-							</ul>
+					</div>
+				</div>
+				<div class="footer-copyright bg-transparent">
+					<div class="container">
+						<hr class="bg-color-light opacity-1">
+						<div class="row">
+							<div class="col mt-4 mb-4 pb-5">
+								<p class="text-center text-3 mb-0">Aromore © 2025. All Rights Reserved.</p>
+							</div>
 						</div>
 					</div>
 				</div>

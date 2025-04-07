@@ -14299,6 +14299,7 @@ html.boxed .nav-secondary.sticky-active {
 .nav-pills > li.active > a,
 .nav-pills .nav-link.active {
 	background-color: var(--primary);
+	color: var(--dark);
 }
 
 .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus,
@@ -19037,7 +19038,7 @@ html[dir="rtl"] .tabs.tabs-vertical.tabs-right .nav-tabs li .nav-link:hover html
 	position: relative;
 	text-decoration: none;
 	max-width: 100%;
-	background-color: var(--light);
+	background: linear-gradient(to right bottom, #313534, #0F1417);
 	border-radius: var(--border-radius);
 	overflow: hidden;
 	backface-visibility: hidden;
