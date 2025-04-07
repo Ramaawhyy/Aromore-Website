@@ -291,6 +291,18 @@
     }
 }
 
+.nav-pills .nav-link {
+    color: white; /* Warna teks putih saat tidak aktif */
+    background-color: transparent; /* Background transparan saat tidak aktif */
+}
+
+.nav-pills .nav-link.active {
+    color: black !important; /* Warna teks hitam saat aktif */
+    background-color: var(--primary) !important; /* Background color sesuai warna primary Bootstrap */
+}
+
+
+
 
 
 
@@ -324,24 +336,22 @@
 														<a href="demo-business-consulting-4.html" class="nav-link">Home</a>
 													</li>
 													<li>
-														<a href="demo-business-consulting-4-about-us.html" class="nav-link active">About Us</a>
+														<a href="demo-business-consulting-4-about-us.html" class="nav-link">About Us</a>
 													</li>
 													<li>
 														<a href="services.html" class="nav-link">Services</a>
 													</li>
 													<li>
-														<a href="team.html" class="nav-link">Team</a>
+														<a href="demo-education-instructors.html" class="nav-link">Team</a>
 													</li>
 												</ul>
 											</nav>
 										</div>
 									</div>
-									
-									<a href="contact.html" class="btn btn-modern btn-primary btn-outline btn-arrow-effect-1 text-capitalize text-2-5 ms-3 me-2 d-block d-md-none d-xl-block anim-hover-translate-right-5px transition-2ms">Contact Us <i class="fas fa-arrow-right ms-2"></i></a>
-										<button class="btn header-btn-collapse-nav" data-bs-toggle="collapse" data-bs-target=".header-nav-main nav">
-											<i class="fas fa-bars"></i>
+									<a href="demo-business-consulting-4-contact-us.html" class="btn btn-modern btn-primary btn-outline btn-arrow-effect-1 text-capitalize text-2-5 ms-3 me-2 d-block d-md-none d-xl-block anim-hover-translate-right-5px transition-2ms active" style="color: black;">Contact Us <i class="fas fa-arrow-right ms-2" style="color: black;"></i></a>
+										<button class="btn header-btn-collapse-nav active" data-bs-toggle="collapse" data-bs-target=".header-nav-main nav" style="color: black;">
+											<i class="fas fa-bars" style="color: black;"></i>
 										</button>
-									
 								</div>
 							</div>
 						</div>
@@ -358,164 +368,96 @@
 					<div class="container">
 						<div class="row mt-5">
 							<div class="col align-self-center p-static text-center">
-								<h1 class="font-weight-bold text-color-secondary text-10 text-gradient">About Us</h1>
+								<h1 class="font-weight-bold text-color-secondary text-10 text-gradient">Contact</h1>
 							</div>
 						</div>
 					</div>
 				</section>
-				<div class="container">
-					<div class="row py-3">
-						<div class="col">
-							<ul class="breadcrumb d-block">
-								<li><a href="#">Home</a></li>
-								<li class="active">About Us</li>
-							</ul>
-						</div>
-					</div>
-					<div class="row py-3">
-						<div class="col">
-							<h2 class="text-9 text-lg-5 text-xl-9 line-height-3 text-transform-none font-weight-semibold mb-4 mb-lg-3 mb-xl-4 appear-animation text-gradient" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="250">We deliver the most advanced strategies for your business</h2>
-							<p class="text-3-5 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vulputate posuere tortor luctus vulputate. Cras laoreet pretium blandit. Vestibulum luctus laoreet lacinia. Maecenas luctus arcu ut orci lacinia ultrices. Praesent semper porta interdum. Etiam cursus, tortor at interdum rutrum, metus nibh tincidunt purus, non tincidunt odio arcu quis erat.</p>
-							<p class="mb-5 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750">Curabitur vulputate posuere tortor luctus vulputate. Cras laoreet pretium blandit. Vestibulum luctus laoreet lacinia. Maecenas luctus arcu ut orci lacinia ultrices. Praesent semper porta interdum. Etiam cursus, tortor at interdum rutrum, metus nibh tincidunt purus, non tincidunt odio arcu quis erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vulputate posuere tortor luctus vulputate. Cras laoreet pretium blandit. Vestibulum luctus laoreet lacinia. </p>
-						
-							<!-- Video YouTube -->
-							<div class="position-relative">
-								<div class="ratio ratio-16x9">
-									<video id="customVideo" width="100%" autoplay loop muted playsinline>
-										<source src="video/Final Video.mp4" type="video/mp4">
-										Your browser does not support the video tag.
-									</video>
-								</div>
-							</div>
-						</div>
-						
-						
-							<!-- Testimonial -->
-							<div class="row justify-content-center my-5">
-								<div class="col-lg-8 text-center">
-									<div class="testimonial testimonial-style-2 testimonial-with-quotes testimonial-quotes-primary mb-0">
-										<blockquote>
-											<p class="mb-0 custom-font-1 fst-italic text-5 line-height-7">
-												Pellentesque ultricies nibh gravida, accumsan libero luctus, molestie nunc. In nibh ipsum, blandit id faucibus accumsan libero luctus, molestie nunc.
-											</p>
-										</blockquote>
-									</div>
-								</div>
-							</div>
+				
+					
 
-							<div class="row">
-								<div class="col-md-6">
-									<div class="overflow-hidden">
-										<div class="overflow-hidden mb-3-5">
-											<h2 class="text-color-secondary font-weight-semi-bold text-6 line-height-1 mb-0 appear-animation text-gradient" data-appear-animation="maskUp" data-appear-animation-delay="100">Our Mission</h2>
-										</div>
-										<p class="text-3-5 line-height-9 mb-5 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dapibus elementum ante quis commodo. Fusce tincidunt pretium pellentesque. Nulla vitae ante tincidunt, suscipit dui sit amet, posuere tortor. Sed elementum ex fringilla, molestie nibh eu, pulvinar diam. Fusce vestibulum nisl a lectus consequat, vel semper arcu tempor. Sed ac consequat nunc.</p>
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="overflow-hidden">
-										<div class="overflow-hidden mb-3-5">
-											<h2 class="text-color-secondary font-weight-semi-bold text-6 line-height-1 mb-0 appear-animation text-gradient" data-appear-animation="maskUp" data-appear-animation-delay="500">Our Vision</h2>
-										</div>
-										<p class="text-3-5 line-height-9 mb-5 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dapibus elementum ante quis commodo. Fusce tincidunt pretium pellentesque. Nulla vitae ante tincidunt, suscipit dui sit amet, posuere tortor. Sed elementum ex fringilla, molestie nibh eu, pulvinar diam. Fusce vestibulum nisl a lectus consequat, vel semper arcu tempor. Sed ac consequat nunc.</p>
-									</div>
-								</div>
-							</div>
 
-						</div>
-					</div>
-				</div>
-				<div class="container pt-3 mt-4">
-					<div class="row">
-						<div class="col">
-							
-							<div class="row row-gutter-sm align-items-center pb-3 mb-5">
-								<div class="col-lg-6 col-xl-7">
-									<div class="row flex-xl-nowrap align-items-center mb-4 mb-lg-0">
-										<div class="col-sm-auto mb-4 mb-sm-0">
-											<div class="d-flex appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="1000">
-												<img width="63" height="63" src="img/demos/business-consulting-3/icons/label.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'd-lg-none d-xl-block'}" />
-												<span class="text-3 font-weight-bold text-color-dark pt-2 ms-3">
-													<strong class="d-block font-weight-bold text-10 mb-0">240+</strong>
-													Satisfied Clients
-												</span>
+				<section class="team">
+					<div class="container">
+				
+						<div class="container">
+
+							<div class="row py-4">
+								<div class="col-lg-6">
+		
+									<h2 class="font-weight-bold text-8 mt-2 mb-0 text-gradient">Contact Us</h2>
+									<p class="mb-4">Feel free to ask for details, don't save any questions!</p>
+		
+									<form class="contact-form" action="php/contact-form.php" method="POST">
+										<div class="contact-form-success alert alert-success d-none mt-4">
+											<strong>Success!</strong> Your message has been sent to us.
+										</div>
+		
+										<div class="contact-form-error alert alert-danger d-none mt-4">
+											<strong>Error!</strong> There was an error sending your message.
+											<span class="mail-error-message text-1 d-block"></span>
+										</div>
+		
+										<div class="row">
+											<div class="form-group col-lg-6">
+												<label class="form-label mb-1 text-2">Full Name</label>
+												<input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control text-3 h-auto py-2" name="name" required>
+											</div>
+											<div class="form-group col-lg-6">
+												<label class="form-label mb-1 text-2">Email Address</label>
+												<input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control text-3 h-auto py-2" name="email" required>
 											</div>
 										</div>
-										<div class="col-sm-7 col-md-8">
-											<blockquote class="custom-blockquote-style-1 m-0 pt-1 pb-2 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="1200">
-												<p class="mb-0">Cras a elit sit amet leo accumsan volutpat. Suspendisse hendreriast ehicula leo. </p>
-											</blockquote>
+										<div class="row">
+											<div class="form-group col">
+												<label class="form-label mb-1 text-2">Subject</label>
+												<input type="text" value="" data-msg-required="Please enter the subject." maxlength="100" class="form-control text-3 h-auto py-2" name="subject" required>
+											</div>
 										</div>
+										<div class="row">
+											<div class="form-group col">
+												<label class="form-label mb-1 text-2">Message</label>
+												<textarea maxlength="5000" data-msg-required="Please enter your message." rows="8" class="form-control text-3 h-auto py-2" name="message" required></textarea>
+											</div>
+										</div>
+										<div class="row">
+											<div class="form-group col">
+												<input type="submit" value="Send Message" class="btn btn-primary btn-modern" data-loading-text="Loading...">
+											</div>
+										</div>
+									</form>
+		
+								</div>
+								<div class="col-lg-6">
+		
+									<div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="800">
+										<h4 class="mt-2 mb-1 text-gradient">Our <strong>Office</strong></h4>
+										<ul class="list list-icons list-icons-style-2 mt-2">
+											<li><i class="fas fa-map-marker-alt top-6"></i> <strong class="text-light">Address:</strong> Anywhere, 121 King St, Bandung</li>
+											<li><i class="fas fa-phone top-6"></i> <strong class="text-light">Phone:</strong> (123) 456-789</li>
+											<li><i class="fas fa-envelope top-6"></i> <strong class="text-light">Email:</strong> <a href="mailto:mail@example.com">mail@example.com</a></li>
+										</ul>
 									</div>
-								</div>
-								<div class="col-lg-6 col-xl-5">
-									<div class="row row-gutter-sm align-items-center">
-										<div class="col-auto appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="1400">
-											<a href="demo-business-consulting-3-contact.html" class="btn btn-primary custom-btn-style-1 font-weight-semibold btn-px-3 btn-py-2 text-3-5" data-cursor-effect-hover="plus" data-cursor-effect-hover-color="light"><span>Get a Quote</span></a>
-										</div>
-										<div class="col-auto appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="1600">
-											<a href="demo-business-consulting-3-contact.html" class="btn btn-dark custom-btn-style-1 font-weight-semibold btn-px-3 btn-py-2 text-3-5" data-cursor-effect-hover="plus" data-cursor-effect-hover-color="light"><span>Contact Us</span></a>
-										</div>
-										<div class="col-auto mt-4 mt-sm-0 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="1800">
-											<span class="d-flex align-items-center p-0">
-												<span>
-													<img width="25" height="25" src="img/demos/business-consulting-3/icons/phone.svg" alt="Phone Icon" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-dark'}" />
-												</span>
-												<a class="text-color-dark text-color-hover-primary text-decoration-none font-weight-semibold text-3 ms-2" href="tel:1234567890">(800) 123-4567</a>
-											</span>
-										</div>
+		
+									<div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="950">
+										<h4 class="pt-5 text-gradient">Business <strong>Hours</strong></h4>
+										<ul class="list list-icons list-dark mt-2">
+											<li><i class="far fa-clock top-6" style="color: #BAFD02;"></i> Monday - Friday - 9am to 5pm</li>
+											<li><i class="far fa-clock top-6" style="color: #BAFD02;"></i> Saturday - 9am to 2pm</li>
+											<li><i class="far fa-clock top-6" style="color: #BAFD02;"></i> Sunday - Closed</li>
+										</ul>
 									</div>
+		
+									<h4 class="pt-5 text-gradient">Get in <strong>Touch</strong></h4>
+									<p class="lead mb-0 text-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget leo at velit imperdiet varius. In eu ipsum vitae velit congue iaculis vitae at risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+		
 								</div>
+		
 							</div>
+		
 						</div>
-					</div>
-					<div class="row row-gutter-sm">
-						<div class="col-sm-6 mb-4 mb-sm-0">
-							<img src="img/demos/business-consulting-4/generic/1.png" class="img-fluid box-shadow-5 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="800" alt="" />
-						</div>
-						<div class="col-6 col-sm-3">
-							<img src="img/demos/business-consulting-4/generic/2.png" class="img-fluid box-shadow-5 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="600" alt="" />
-						</div>
-						<div class="col-6 col-sm-3">
-							<img src="img/demos/business-consulting-4/generic/3.png" class="img-fluid box-shadow-5 mb-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200" alt="" />
-							<img src="img/demos/business-consulting-4/generic/4.png" class="img-fluid box-shadow-5 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400" alt="" />
-						</div>
-					</div>
-				</div>
-
-				<div class="container-fluid pt-5 mt-5 mb-4">
-					<div class="row">
-						<div class="col appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="250">
-							<div class="owl-carousel owl-theme carousel-center-active-item custom-carousel-vertical-center-items custom-dots-style-1" data-plugin-options="{'responsive': {'0': {'items': 1}, '476': {'items': 3}, '768': {'items': 3}, '992': {'items': 5}, '1200': {'items': 5}, '1600': {'items': 7}}, 'autoplay': false, 'autoplayTimeout': 3000, 'dots': true}">
-								<div class="text-center">
-									<img class="d-inline-block img-fluid" src="img/logos/logo-8.png" alt="" style="max-width: 90px;" />
 								</div>
-								<div class="text-center">
-									<img class="d-inline-block img-fluid" src="img/logos/logo-9.png" alt="" style="max-width: 140px;" />
-								</div>
-								<div class="text-center">
-									<img class="d-inline-block img-fluid" src="img/logos/logo-10.png" alt="" style="max-width: 140px;" />
-								</div>
-								<div class="text-center">
-									<img class="d-inline-block img-fluid" src="img/logos/logo-11.png" alt="" style="max-width: 140px;" />
-								</div>
-								<div class="text-center">
-									<img class="d-inline-block img-fluid" src="img/logos/logo-12.png" alt="" style="max-width: 100px;" />
-								</div>
-								<div class="text-center">
-									<img class="d-inline-block img-fluid" src="img/logos/logo-13.png" alt="" style="max-width: 100px;" />
-								</div>
-								<div class="text-center">
-									<img class="d-inline-block img-fluid" src="img/logos/logo-14.png" alt="" style="max-width: 140px;" />
-								</div>
-								<div class="text-center">
-									<img class="d-inline-block img-fluid" src="img/logos/logo-15.png" alt="" style="max-width: 110px;" />
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
+				</section>
 				<section class="section border-0 bg-quaternary m-0" style="position: relative; width: 100%; height: 35vh; background: radial-gradient(circle at top left, rgba(50, 80, 20, 1) 10%, rgba(15, 15, 15, 1) 40%, rgba(5, 5, 5, 1) 70%, rgba(40, 60, 10, 1) 90%, rgba(50, 80, 20, 1) 100%);">
 					<div class="particles-wrapper z-index-99">
 						<div id="particles-1-duplicate" style="opacity: 0.2;"></div>
@@ -539,6 +481,7 @@
 						</div>
 					</div>
 				</section>
+					
 
 			</div>
 

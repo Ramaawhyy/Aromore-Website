@@ -3040,7 +3040,7 @@ html.sticky-header-active .hamburguer-btn.hamburguer-btn-sticky-dark .close span
 }
 
 .btn-outline.btn-primary:active, .btn-outline.btn-primary.active {
-	color: var(--primary-inverse) !important;
+	color: black !important;
 	background-color: var(--primary) !important;
 	border-color: var(--primary) !important;
 }
